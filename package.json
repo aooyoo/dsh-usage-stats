@@ -1,0 +1,52 @@
+{
+  "name": "dsh-usage-stats",
+  "version": "1.0.0",
+  "description": "Token usage statistics for DeepSeek Harness: a sidebar entry and a panel with daily, per-model and per-session totals folded from every session log.",
+  "license": "MIT",
+  "author": "JerryLee <jerry.lee@looper.hk>",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "usage",
+    "tokens",
+    "statistics"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aooyoo/dsh-usage-stats.git"
+  },
+  "homepage": "https://github.com/aooyoo/dsh-usage-stats#readme",
+  "bugs": {
+    "url": "https://github.com/aooyoo/dsh-usage-stats/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage Statistics",
+    "description": "Token usage folded from every session log, with a sidebar entry and a per-model and per-session breakdown."
+  }
+}

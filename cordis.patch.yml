@@ -1,0 +1,8 @@
+- insert:
+    - id: usage-stats
+      name: dsh-usage-stats
+      config:
+        cacheMs: 30000
+        maxSessions: 400
+        allowPlainRoute: false
+        diagnostics: true
